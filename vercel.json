@@ -1,13 +1,23 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
   "installCommand": "npm ci --prefix web",
   "buildCommand": "npm run build --prefix web",
   "outputDirectory": "web/dist",
   "functions": {
-    "api/index.py": { "includeFiles": "{tradelane/**,data/**}", "maxDuration": 300 }
+    "api/index.py": {
+      "includeFiles": "{tradelane/**,data/**}",
+      "maxDuration": 300
+    }
   },
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index" },
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
   ]
 }

@@ -194,7 +194,7 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 export const api = {
-  health: () => call<{ ok: boolean; ai: boolean; model: string | null; db: string; db_ms: number }>("/health"),
+  health: () => call<{ ok: boolean; ai: boolean; db_ms: number }>("/health"),
   users: () => call<User[]>("/users"),
   me: () => call<User>("/me"),
   login: (user_id: string) => call<User>("/login", { method: "POST", body: JSON.stringify({ user_id }) }),

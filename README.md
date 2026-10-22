@@ -9,7 +9,7 @@
 Landed cost for each supplier product on Amazon UK, Amazon US and Walmart US, worked out line by line:
 shipping, duty, tariffs, VAT, marketplace fees and FX. AI does the repetitive work. A person makes the call.
 
-[**Live demo**](https://tradelane-fazal.vercel.app) &nbsp;·&nbsp; [How the numbers work](#how-a-margin-is-worked-out) &nbsp;·&nbsp; [Run it locally](#run-it-locally)
+[**Live demo**](https://tradelane-seven.vercel.app) &nbsp;·&nbsp; [How the numbers work](#how-a-margin-is-worked-out) &nbsp;·&nbsp; [Run it locally](#run-it-locally)
 
 ![Python](https://img.shields.io/badge/Python-3.12-0d253d?style=flat-square&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.159-0d253d?style=flat-square&logo=fastapi&logoColor=white)

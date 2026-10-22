@@ -22,7 +22,7 @@ from sqlalchemy.orm import Session
 
 from . import ai, analyst
 from .catalogue import latest_reviews, lanes_for, stats, to_engine, world
-from .db import URL, Ask, Cache, Event, ProductRow, Review, Setting, User, init_db, now, session
+from .db import Ask, Cache, Event, ProductRow, Review, Setting, User, init_db, now, session
 from .engine import World, evaluate, sensitivity
 from .rules import ASSUMPTION_FIELDS, CATEGORIES, CHANNELS, CHECKED, DUTIES, ORIGINS, ROUTES, US_MFN_LINES
 from .sources import us_mfn
@@ -105,8 +105,7 @@ def health(s: Session = Depends(db)):
     t = time.perf_counter()
     s.execute(text("select 1"))
     ms = round((time.perf_counter() - t) * 1000)
-    return {"ok": True, "ai": ai.enabled(), "model": ai.model_name() if ai.enabled() else None,
-            "db": "Neon Postgres" if URL.startswith("postgresql") else "SQLite", "db_ms": ms}
+    return {"ok": True, "ai": ai.enabled(), "db_ms": ms}
 
 
 # ---- products ----

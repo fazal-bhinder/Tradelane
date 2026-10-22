@@ -44,13 +44,6 @@ export function ago(iso: string): string {
   return new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "short" });
 }
 
-/** "z-ai/glm-5.3-flash" -> "GLM 5.3 Flash" */
-export function prettyModel(m: string | null | undefined): string {
-  if (!m) return "AI";
-  const base = m.split("/").pop() ?? m;
-  return base.replace(/^glm-/i, "GLM ").replace(/-/g, " ").replace(/\b(flash|turbo|air|prime)\b/gi, (w) => w[0].toUpperCase() + w.slice(1));
-}
-
 export function seconds(ms: number): string {
   return `${(ms / 1000).toFixed(1)}s`;
 }

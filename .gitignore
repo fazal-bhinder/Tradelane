@@ -11,3 +11,5 @@ tradelane.db
 .agents/
 web/e2e/__screenshots__/
 .claude/
+.vercel
+.env*

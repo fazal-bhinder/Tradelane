@@ -1,0 +1,7 @@
+.venv
+.agents
+.taste-skill
+web/node_modules
+tests
+*.db
+.env

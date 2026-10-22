@@ -1,0 +1,200 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+
+/* dark mode follows a class on <html>, set before first paint by index.html */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Stripe's palette mapped onto the achromatic-ledger roles: the chrome is ink,
+   indigo goes on the margin (the data every screen is about) and the one primary
+   action, red only on money that is lost. */
+@theme {
+  --font-sans: "Inter Variable", "SF Pro Display", system-ui, sans-serif;
+
+  --color-ground: #f6f9fc;
+  --color-surface: #ffffff;
+  --color-raised: #f2f5f9;
+  --color-active: #e8edf3;
+  --color-border: #e3e8ee;
+  --color-rule: #edf1f5;
+  --color-control: #c4d1de;
+
+  --color-ink: #0d253d;
+  --color-ink-2: #273951;
+  --color-muted: #5d6c83;
+
+  --color-indigo: #533afd;
+  --color-indigo-deep: #4434d4;
+  --color-indigo-press: #2e2b8c;
+  --color-indigo-pale: #eeecff;
+  --color-navy: #1c1e54;
+
+  --color-negative: #c4242a;
+  --color-negative-pale: #ffedea;
+  --color-negative-ink: #831c1e;
+  --color-positive: #247b50;
+  --color-positive-pale: #dcfae5;
+  --color-positive-ink: #04250e;
+  --color-notice-pale: #fffbeb;
+  --color-notice-line: #fde68a;
+  --color-notice-ink: #92400e;
+  --color-grid: #e6ebf1;
+  --color-mesh-cream: #f5e9d4;
+  --color-mesh-orange: #ffb07c;
+  --color-mesh-lavender: #b9b9f9;
+  --color-ruby: #ea2261;
+  --color-magenta: #f96bee;
+
+  --animate-drift-a: drift-a 22s ease-in-out infinite alternate;
+  --animate-drift-b: drift-b 28s ease-in-out infinite alternate;
+  --animate-drift-c: drift-c 34s ease-in-out infinite alternate;
+  --animate-shimmer: shimmer 1.6s linear infinite;
+  --animate-pulse-dot: pulse-dot 2s ease-out infinite;
+
+  @keyframes drift-a { to { transform: translate(-60px, 30px) scale(1.08); } }
+  @keyframes drift-b { to { transform: translate(80px, -20px) scale(0.94); } }
+  @keyframes drift-c { to { transform: translate(-40px, -30px) rotate(8deg); } }
+  @keyframes shimmer { from { background-position: -200% 0; } to { background-position: 200% 0; } }
+  @keyframes pulse-dot { 0% { box-shadow: 0 0 0 0 rgb(36 123 80 / 0.45); } 70% { box-shadow: 0 0 0 7px rgb(36 123 80 / 0); } 100% { box-shadow: 0 0 0 0 rgb(36 123 80 / 0); } }
+
+  /* chart slots: validated with the dataviz palette checker in light and dark */
+  --color-chart-product: #2a78d6;
+  --color-chart-shipping: #eb6834;
+  --color-chart-duty: #1baf7a;
+  --color-chart-fee: #eda100;
+  --color-chart-other: #e87ba4;
+  --color-chart-profit: #533afd;
+  --color-chart-cost: #8193aa;
+  --color-chart-vat: #c9d3df;
+  --color-list: #8f7dff;
+  --color-approver-pale: #fde7ef;
+  --color-approver-ink: #9b1446;
+  --color-on-accent: #ffffff;
+
+  --radius-card: 16px;
+  --radius-control: 10px;
+  --radius-panel: 22px;
+}
+
+/* Dark mode is pitch black and neutral: no blue, no purple, no gradients.
+   The accent becomes white, so every "indigo" role turns monochrome here. */
+.dark {
+  color-scheme: dark;
+  --color-ground: #000000;
+  --color-surface: #0b0b0b;
+  --color-raised: #151515;
+  --color-active: #1d1d1d;
+  --color-border: #232323;
+  --color-rule: #1a1a1a;
+  --color-control: #3a3a3a;
+  --color-ink: #f5f5f5;
+  --color-ink-2: #c8c8c8;
+  --color-muted: #8e8e8e;
+  --color-indigo: #f5f5f5;
+  --color-indigo-deep: #dcdcdc;
+  --color-indigo-press: #ffffff;
+  --color-indigo-pale: #1d1d1d;
+  --color-on-accent: #000000;
+  --color-navy: #1a1a1a;
+  --color-negative: #ff5c5c;
+  --color-negative-pale: #2a1212;
+  --color-negative-ink: #ffb3b3;
+  --color-positive: #3fc07a;
+  --color-positive-pale: #0f2418;
+  --color-positive-ink: #a6f0c6;
+  --color-notice-pale: #261d07;
+  --color-notice-line: #5c4610;
+  --color-notice-ink: #f8d58a;
+  --color-grid: #262626;
+  --color-mesh-cream: #2a2a2a;
+  --color-mesh-orange: #3a3a3a;
+  --color-mesh-lavender: #8e8e8e;
+  --color-ruby: #ff4d6d;
+  --color-magenta: #f5a524;
+  --color-chart-product: #a3a3a3;
+  --color-chart-shipping: #e8652d;
+  --color-chart-duty: #22a06b;
+  --color-chart-fee: #d9a400;
+  --color-chart-other: #e05a9a;
+  --color-chart-profit: #f5f5f5;
+  --color-chart-cost: #6f6f6f;
+  --color-chart-vat: #3d3d3d;
+  --color-list: #f5f5f5;
+  --color-approver-pale: #2a1218;
+  --color-approver-ink: #ffb0c3;
+}
+
+/* the navy hero becomes a flat black card in dark mode */
+.dark .panel-navy {
+  background: #0d0d0d;
+  border: 1px solid var(--color-border);
+  box-shadow: none;
+}
+
+@layer base {
+  html {
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    /* the page's own colour behind everything, and no rubber-band scroll showing through */
+    background-color: var(--color-ground);
+    overscroll-behavior: none;
+  }
+  body {
+    @apply bg-ground text-ink font-sans text-[14px] leading-5 transition-colors duration-300;
+    overscroll-behavior: none;
+  }
+  /* Tailwind v4 leaves buttons on the default arrow: everything clickable gets the hand */
+  button:not(:disabled), [role="button"], [role="tab"], [role="radio"], a[href], select, summary, label:has(input[type="checkbox"]) {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-indigo;
+  }
+  ::selection {
+    @apply bg-indigo-pale;
+  }
+}
+
+@utility num {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+/* Stripe's signature: thin figures with tight tracking where money is the answer. */
+@utility figure {
+  font-variant-numeric: tabular-nums;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+}
+
+/* Stripe's display type: thin, tight, large. */
+@utility display {
+  font-weight: 300;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
+
+/* Loading text: a moving sheen over the words, for AI work in progress. */
+@utility thinking {
+  background: linear-gradient(90deg, var(--color-muted) 0%, var(--color-muted) 40%, var(--color-indigo) 50%, var(--color-muted) 60%, var(--color-muted) 100%);
+  background-size: 200% 100%;
+  background-clip: text;
+  color: transparent;
+  animation: var(--animate-shimmer);
+}
+
+@utility panel-navy {
+  background-color: #1c1e54;
+  background-image: radial-gradient(120% 140% at 100% 0%, rgb(83 58 253 / 0.55) 0%, rgb(28 30 84 / 0) 55%),
+    radial-gradient(90% 120% at 0% 100%, rgb(234 34 97 / 0.22) 0%, rgb(28 30 84 / 0) 50%);
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

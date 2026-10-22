@@ -1,0 +1,31 @@
+sku,name,description,supplier,unit_cost,cost_currency,weight_kg,length_cm,width_cm,height_cm,origin,category,hs_code,price_amazon_uk,price_amazon_us,price_walmart_us
+JPR-CU-014,Indigo block-print cushion cover 45x45,Hand block-printed cotton cushion cover with zip; natural indigo dye,Bagru Prints Co,185,INR,0.16,30,24,2,IN,home,630492,16.99,19.99,18.49
+JPR-BS-022,Sanganeri floral double bedsheet set,Cotton percale double bedsheet with two pillow covers; hand block printed,Bagru Prints Co,640,INR,1.10,38,30,6,IN,home,630231,34.99,42.99,39.99
+JPR-QT-005,Jaipuri razai quilt (single),Hand-quilted cotton quilt with cotton fill; reversible print,Bagru Prints Co,1150,INR,1.40,45,40,14,IN,home,940490,49.99,59.99,54.99
+MRD-LP-031,Brass dome table lamp,Hand-hammered brass shade on a wooden base; E27 holder; UK and US plug options,Moradabad Metal Arts,1450,INR,1.90,32,32,40,IN,home,940520,64.99,74.99,69.99
+MRD-PL-008,Hammered copper planter (medium),Copper-plated iron planter with drainage hole; 18 cm wide,Moradabad Metal Arts,420,INR,0.75,20,20,18,IN,,,22.99,27.99,25.99
+MRD-CS-012,Set of 6 brass coasters,Engraved brass coasters with felt backs in a stand,Moradabad Metal Arts,360,INR,0.55,14,12,8,IN,kitchen,741820,17.99,21.99,19.99
+KHJ-MG-040,Blue pottery mug,Hand-painted Jaipur blue pottery mug; 300 ml; food safe glaze,Kripal Blue Pottery,210,INR,0.38,14,11,11,IN,kitchen,691200,13.99,16.99,15.49
+KHJ-BW-041,Blue pottery serving bowl,Hand-painted quartz-clay bowl; 20 cm,Kripal Blue Pottery,480,INR,0.85,24,24,10,IN,,,26.99,32.99,29.99
+KRL-SP-101,Kerala spice tin (8 spices),Steel masala dabba with 8 whole spices and a lid; 450 g of spice,Malabar Spice House,520,INR,1.05,22,22,9,IN,kitchen,732393,24.99,29.99,27.99
+KRL-TE-102,Masala chai loose tea 250 g,Assam CTC with cardamom ginger and clove,Malabar Spice House,190,INR,0.30,15,10,6,IN,kitchen,090240,9.99,11.99,10.99
+VAS-SP-201,Sandalwood soap bar set of 4,Cold-process soap with sandalwood oil; 100 g each,Vasa Ayurvedic,220,INR,0.48,18,10,7,IN,beauty,340111,11.99,14.99,13.49
+VAS-OL-202,Kumkumadi face oil 30 ml,Saffron and herb infused facial oil in amber glass,Vasa Ayurvedic,310,INR,0.12,10,5,5,IN,beauty,330499,18.99,24.99,22.99
+VAS-HR-203,Bhringraj hair oil 200 ml,Herbal hair oil with bhringraj and amla; sesame base,Vasa Ayurvedic,140,INR,0.26,18,6,6,IN,,,8.99,9.99,8.99
+FAB-KU-301,Hand block-printed cotton kurta,Women's straight kurta in cotton cambric; sizes S to XL,Anokhi Weavers,560,INR,0.24,30,24,3,IN,clothing,621142,27.99,34.99,31.99
+FAB-ST-302,Pashmina-blend stole,Wool and viscose stole 70x200 cm with hand-knotted fringe,Anokhi Weavers,690,INR,0.22,28,20,3,IN,clothing,621420,29.99,36.99,33.99
+FAB-TS-303,Organic cotton crew T-shirt,Plain 180 gsm organic cotton crew neck; unisex,Tirupur Knit Works,240,INR,0.19,28,22,2,IN,clothing,610910,12.99,14.99,13.99
+FAB-SR-304,Banarasi silk saree,Pure silk with zari border and blouse piece,Varanasi Silk Looms,4200,INR,0.85,35,28,5,IN,clothing,500720,129.00,159.00,149.00
+JWL-EA-401,Silver jhumka earrings,925 sterling silver jhumkas with oxidised finish,Johari Bazaar Silver,1250,INR,0.03,9,7,3,IN,jewelry,711311,44.99,54.99,49.99
+JWL-NK-402,Kundan choker necklace,Gold-plated brass kundan choker with matching earrings,Johari Bazaar Silver,980,INR,0.09,18,14,4,IN,jewelry,711719,39.99,49.99,44.99
+JWL-BR-403,Silver bangle pair,925 sterling silver bangles with hand engraving,Johari Bazaar Silver,3600,INR,0.07,10,10,4,IN,jewelry,711311,139.00,179.00,169.00
+TOY-CH-501,Channapatna wooden stacking toy,Lacquered wood rings with vegetable dyes; for ages 1+,Channapatna Toys Guild,260,INR,0.32,16,12,12,IN,toys,950300,15.99,19.99,17.99
+TOY-KT-502,Kite and spool set,Paper kites with cotton thread on a wooden spool,Channapatna Toys Guild,150,INR,0.18,60,50,3,IN,,,9.99,12.99,11.49
+SPT-YM-601,Jute yoga mat,Natural jute and PER yoga mat 183x61 cm 6 mm,Rishikesh Yoga Supply,850,INR,2.20,64,14,14,IN,sports,950691,39.99,44.99,42.99
+SPT-CB-602,Kashmir willow cricket bat,Full-size Kashmir willow bat with cane handle,Jalandhar Sports Works,1350,INR,1.25,86,13,8,IN,sports,950670,44.99,59.99,54.99
+SPT-YB-603,Cork yoga block,High density cork block 23x15x7.5 cm,Rishikesh Yoga Supply,290,INR,0.42,23,15,8,IN,sports,,14.99,16.99,15.99
+GBR-CN-701,Soy wax candle in amber jar,Hand-poured soy candle with cotton wick; 40 hour burn,Hebden Candle Co,4.10,GBP,0.48,10,10,11,GB,home,340600,18.00,24.99,22.99
+GBR-TW-702,Waffle cotton tea towels (2),100% cotton waffle tea towels 50x70 cm,Lancashire Linen,3.40,GBP,0.21,22,18,3,GB,kitchen,630291,12.00,17.99,15.99
+GBR-SC-703,Lambswool scarf,Scottish lambswool scarf 25x180 cm,Borders Knitwear,11.50,GBP,0.20,26,20,3,GB,clothing,611710,45.00,64.99,59.99
+GBR-MG-704,Stoneware mug,Glazed stoneware mug 350 ml made in Stoke-on-Trent,Potteries Direct,4.80,GBP,,13,10,11,GB,kitchen,691200,14.00,19.99,17.99
+GBR-BP-705,Wooden board game set,Chess and draughts set in a folding oak case,Cotswold Games,14.00,GBP,1.60,42,22,6,GB,toys,950490,49.00,,64.99
